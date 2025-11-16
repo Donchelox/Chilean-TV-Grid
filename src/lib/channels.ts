@@ -32,7 +32,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   {
     id: '7',
     name: 'Chilevisión Noticias',
-    url: 'https://www.youtube.com/watch?v=CjM3n355R4Y',
+    url: 'https://www.youtube.com/watch?v=lNVm0ER87b4',
     description: 'Noticias de Chilevisión.',
     isVisible: true,
   },
