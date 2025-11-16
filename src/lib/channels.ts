@@ -4,7 +4,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   {
     id: '1',
     name: 'Meganoticias',
-    url: 'https://www.youtube.com/watch?v=S33fH2A2RPA',
+    url: 'https://www.youtube.com/watch?v=pRMA_s9_Uvg',
     description: 'Canal de noticias de Mega, con información de Chile y el mundo.',
     isVisible: true,
   },
