@@ -4,14 +4,14 @@ export const INITIAL_CHANNELS: Channel[] = [
   {
     id: '1',
     name: 'Meganoticias',
-    url: 'https://www.youtube.com/watch?v=HfCH3zezHgE',
+    url: 'https://www.youtube.com/watch?v=pRMA_s9_Uvg',
     description: 'Canal de noticias de Mega, con información de Chile y el mundo.',
     isVisible: true,
   },
   {
     id: '2',
     name: '24 Horas',
-    url: 'https://www.youtube.com/watch?v=h3Jn8f-YKRk',
+    url: 'https://www.youtube.com/watch?v=Cs23oiPWZco',
     description: 'Canal de noticias 24/7 de Televisión Nacional de Chile (TVN).',
     isVisible: true,
   },
@@ -32,7 +32,7 @@ export const INITIAL_CHANNELS: Channel[] = [
   {
     id: '7',
     name: 'Chilevisión Noticias',
-    url: 'https://www.youtube.com/watch?v=H3AFMMYG_tU',
+    url: 'https://www.youtube.com/watch?v=lNVm0ER87b4',
     description: 'Noticias de Chilevisión.',
     isVisible: true,
   },

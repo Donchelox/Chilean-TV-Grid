@@ -55,14 +55,13 @@ export default function AdminPanelContent() {
             <TableHeader>
               <TableRow>
                 <TableHead className="w-[250px]">Nombre</TableHead>
-                <TableHead>ID</TableHead>
                 <TableHead className="w-[120px] text-right">Acciones</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
               {!areChannelsLoaded ? (
                 <TableRow>
-                  <TableCell colSpan={3} className="h-24 text-center">
+                  <TableCell colSpan={2} className="h-24 text-center">
                     <Loader2 className="mx-auto h-6 w-6 animate-spin" />
                   </TableCell>
                 </TableRow>
@@ -70,9 +69,6 @@ export default function AdminPanelContent() {
                 channels.map((channel: Channel) => (
                   <TableRow key={channel.id}>
                     <TableCell className="font-medium">{channel.name}</TableCell>
-                    <TableCell className="max-w-xs truncate text-muted-foreground">
-                       {getChannelIdentifier(channel.url)}
-                    </TableCell>
                     <TableCell className="text-right">
                       <div className="flex justify-end gap-2">
                          <Button variant="ghost" size="icon" onClick={() => toggleChannelVisibility(channel.id)}>
@@ -121,7 +117,7 @@ export default function AdminPanelContent() {
                 ))
               ) : (
                 <TableRow>
-                  <TableCell colSpan={3} className="h-24 text-center">
+                  <TableCell colSpan={2} className="h-24 text-center">
                     No hay canales. Agrega uno para empezar.
                   </TableCell>
                 </TableRow>
