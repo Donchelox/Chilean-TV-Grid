@@ -1,0 +1,17 @@
+# ===== CONFIGURACIÓN GENERAL DE NEXT + NETLIFY =====
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+
+# ===== EVITAR CACHÉ DEL NAVEGADOR =====
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Evita que el navegador use versiones antiguas
+    Cache-Control = "no-cache, no-store, must-revalidate"
+    Pragma = "no-cache"
+    Expires = "0"
