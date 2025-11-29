@@ -19,7 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html
+      lang="en"
+      className="dark"
+      // Asegura que la var CSS usada por widgets externos esté presente
+      // tanto en SSR como en el cliente para evitar errores de hidratación.
+      style={{ ['--n8n-chat-display' as any]: 'none' }}
+    >
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

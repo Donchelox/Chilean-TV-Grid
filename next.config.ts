@@ -1,13 +1,17 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // ⚠️ Ojo: esto deja compilar aunque haya errores de TypeScript.
   typescript: {
     ignoreBuildErrors: true,
   },
+
+  // ⚠️ Y esto permite que el build pase aunque haya errores de ESLint.
   eslint: {
     ignoreDuringBuilds: true,
   },
+
+  // Configuración de imágenes remotas
   images: {
     remotePatterns: [
       {
@@ -18,13 +22,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  devIndicators: {
-    buildActivity: false,
-  },
-  experimental: {
-    // This is required to allow requests from the development environment.
-    allowedDevOrigins: ['https://*.cloudworkstations.dev'],
-  },
+  // experimental: {} // Si no usas nada experimental, mejor dejarlo fuera.
 };
 
 export default nextConfig;
