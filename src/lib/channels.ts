@@ -49,5 +49,12 @@ export const INITIAL_CHANNELS: Channel[] = [
     url: 'https://www.youtube.com/watch?v=J06Fp_18o-s',
     description: 'Canal de televisión chileno.',
     isVisible: true,
+  },
+  {
+    id: '10',
+    name: 'Bio Bio',
+    url: 'https://www.youtube.com/watch?v=JLC3i-iPw9s',
+    description: 'Canal de televisión chileno.',
+    isVisible: true,
   }
 ];
